@@ -35,17 +35,26 @@ class LoginViewController: UIViewController {
         return true
     }
     
-    @IBAction func showACPressed(_ sender: UIButton) {
-        
+    @IBAction func showACForgotNameButton(_ sender: UIButton) {
         let alertController = UIAlertController(title: "Oops!", message: "Your name is User", preferredStyle: .alert)
-        
         let alertOkAction = UIAlertAction(title: "Ok", style: .default)
-        
         alertController.addAction(alertOkAction)
-        
         present(alertController, animated: true)
     }
     
-
+    @IBAction func showACForgotPasswordButton(_ sender: UIButton) {
+        let alertController = UIAlertController(title: "Oops!", message: "Your password is Password", preferredStyle: .alert)
+        let alertOkAction = UIAlertAction(title: "Ok", style: .default)
+        alertController.addAction(alertOkAction)
+        present(alertController, animated: true)
+    }
+    
+    
+    @IBAction func unwind(for segue: UIStoryboardSegue) {
+        guard segue.source is WelcomeViewController else {return}
+        userNameTextField.text = ""
+        passwordTextField.text = ""
+    }
+    
 }
 

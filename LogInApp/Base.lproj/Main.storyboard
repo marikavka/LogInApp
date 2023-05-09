@@ -58,7 +58,7 @@
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="showACPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fUO-01-nDa"/>
+                                                    <action selector="showACForgotNameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ki6-in-g7W"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SGJ-kU-Lju">
@@ -70,6 +70,9 @@
                                                 <buttonConfiguration key="configuration" style="plain" title="Forgot Password?">
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="showACForgotPasswordButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bzt-yt-YaV"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -105,15 +108,29 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53X-dU-t5k">
                                 <rect key="frame" x="20" y="197" width="350" height="41"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HCC-ix-Mao">
+                                <rect key="frame" x="20" y="717" width="350" height="43"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Log Out">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="24"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="k47-Hp-S23" kind="unwind" unwindAction="unwindFor:" id="R5u-ec-CqY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="76p-zI-1NC"/>
-                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        <color key="backgroundColor" red="0.63760869335560832" green="0.71103871109983285" blue="0.84258943796157837" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="76p-zI-1NC" firstAttribute="trailing" secondItem="53X-dU-t5k" secondAttribute="trailing" constant="20" id="1pU-tF-4xC"/>
+                            <constraint firstItem="76p-zI-1NC" firstAttribute="trailing" secondItem="HCC-ix-Mao" secondAttribute="trailing" constant="20" id="21P-vL-Cks"/>
+                            <constraint firstItem="HCC-ix-Mao" firstAttribute="leading" secondItem="76p-zI-1NC" secondAttribute="leading" constant="20" id="2x6-kZ-TpE"/>
+                            <constraint firstItem="76p-zI-1NC" firstAttribute="bottom" secondItem="HCC-ix-Mao" secondAttribute="bottom" constant="50" id="JjS-vr-iaX"/>
                             <constraint firstItem="53X-dU-t5k" firstAttribute="top" secondItem="76p-zI-1NC" secondAttribute="top" constant="150" id="TD9-og-hRU"/>
                             <constraint firstItem="53X-dU-t5k" firstAttribute="leading" secondItem="76p-zI-1NC" secondAttribute="leading" constant="20" id="thj-0M-0jr"/>
                         </constraints>
@@ -124,14 +141,12 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nqv-K3-1zE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="k47-Hp-S23" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="881.53846153846155" y="2.8436018957345972"/>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemPurpleColor">
-            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="tintColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
