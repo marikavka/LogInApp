@@ -58,7 +58,7 @@
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="showACForgotNameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ki6-in-g7W"/>
+                                                    <action selector="forgotNameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nkh-uF-AaS"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SGJ-kU-Lju">
@@ -71,7 +71,7 @@
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="showACForgotPasswordButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bzt-yt-YaV"/>
+                                                    <action selector="forgotPasswordButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tlj-3J-dbJ"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -102,7 +102,7 @@
         <scene sceneID="KG6-uK-RrV">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="0tM-Z1-Awk" customClass="WelcomeViewController" customModule="LogInApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="LBO-2H-dP1">
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="LBO-2H-dP1">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -125,7 +125,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="76p-zI-1NC"/>
-                        <color key="backgroundColor" red="0.63760869335560832" green="0.71103871109983285" blue="0.84258943796157837" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.91512529740000004" green="0.73146947110000005" blue="0.94483901520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="76p-zI-1NC" firstAttribute="trailing" secondItem="53X-dU-t5k" secondAttribute="trailing" constant="20" id="1pU-tF-4xC"/>
                             <constraint firstItem="76p-zI-1NC" firstAttribute="trailing" secondItem="HCC-ix-Mao" secondAttribute="trailing" constant="20" id="21P-vL-Cks"/>
