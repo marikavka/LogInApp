@@ -11,7 +11,7 @@ class WelcomeViewController: UIViewController {
     
     @IBOutlet var welcomeLabel: UILabel!
     
-    var userNme: String!
+    var userName = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +24,6 @@ class WelcomeViewController: UIViewController {
         ]
         view.layer.insertSublayer(gradientLayer, at: 0)
         
-        welcomeLabel.text = "Welcome, \(userNme ?? "")"
+        welcomeLabel.text = "Welcome, \(userName)!"
     }
 }

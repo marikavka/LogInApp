@@ -40,7 +40,7 @@
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <segue destination="0tM-Z1-Awk" kind="show" id="ewi-LX-iit"/>
+                                                    <segue destination="0tM-Z1-Awk" kind="presentation" modalPresentationStyle="fullScreen" id="RiD-5m-BTC"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -58,10 +58,10 @@
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="forgotNameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nkh-uF-AaS"/>
+                                                    <action selector="forgotButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LOu-iC-JNT"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SGJ-kU-Lju">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SGJ-kU-Lju">
                                                 <rect key="frame" x="190" y="0.0" width="180" height="29.666666666666668"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="141.5" id="n4S-Ne-EQx"/>
@@ -71,7 +71,7 @@
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="forgotPasswordButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tlj-3J-dbJ"/>
+                                                    <action selector="forgotButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Krb-AH-7ge"/>
                                                 </connections>
                                             </button>
                                         </subviews>
