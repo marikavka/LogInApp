@@ -14,6 +14,9 @@
 		F9D9D4B72A0A242200D39CAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9D9D4B62A0A242200D39CAC /* Assets.xcassets */; };
 		F9D9D4BA2A0A242200D39CAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9D9D4B82A0A242200D39CAC /* LaunchScreen.storyboard */; };
 		F9D9D4C22A0A63F800D39CAC /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D9D4C12A0A63F800D39CAC /* WelcomeViewController.swift */; };
+		F9D9D4C42A10AC8500D39CAC /* EducationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D9D4C32A10AC8500D39CAC /* EducationViewController.swift */; };
+		F9D9D4C62A10AC9400D39CAC /* TravelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D9D4C52A10AC9400D39CAC /* TravelViewController.swift */; };
+		F9D9D4CD2A10B26800D39CAC /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D9D4CC2A10B26800D39CAC /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		F9D9D4B92A0A242200D39CAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F9D9D4BB2A0A242200D39CAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9D9D4C12A0A63F800D39CAC /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		F9D9D4C32A10AC8500D39CAC /* EducationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationViewController.swift; sourceTree = "<group>"; };
+		F9D9D4C52A10AC9400D39CAC /* TravelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelViewController.swift; sourceTree = "<group>"; };
+		F9D9D4CC2A10B26800D39CAC /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +64,59 @@
 		F9D9D4AC2A0A242000D39CAC /* LogInApp */ = {
 			isa = PBXGroup;
 			children = (
-				F9D9D4AD2A0A242000D39CAC /* AppDelegate.swift */,
-				F9D9D4AF2A0A242000D39CAC /* SceneDelegate.swift */,
-				F9D9D4B12A0A242000D39CAC /* LoginViewController.swift */,
-				F9D9D4C12A0A63F800D39CAC /* WelcomeViewController.swift */,
-				F9D9D4B32A0A242000D39CAC /* Main.storyboard */,
-				F9D9D4B62A0A242200D39CAC /* Assets.xcassets */,
-				F9D9D4B82A0A242200D39CAC /* LaunchScreen.storyboard */,
-				F9D9D4BB2A0A242200D39CAC /* Info.plist */,
+				F9D9D4CB2A10B08700D39CAC /* Models */,
+				F9D9D4C72A10AF9C00D39CAC /* App */,
+				F9D9D4C82A10AFBA00D39CAC /* ViewControllers */,
+				F9D9D4C92A10AFFC00D39CAC /* StoryBoards */,
+				F9D9D4CA2A10B02200D39CAC /* Resources */,
 			);
 			path = LogInApp;
+			sourceTree = "<group>";
+		};
+		F9D9D4C72A10AF9C00D39CAC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F9D9D4AD2A0A242000D39CAC /* AppDelegate.swift */,
+				F9D9D4AF2A0A242000D39CAC /* SceneDelegate.swift */,
+				F9D9D4BB2A0A242200D39CAC /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F9D9D4C82A10AFBA00D39CAC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F9D9D4B12A0A242000D39CAC /* LoginViewController.swift */,
+				F9D9D4C12A0A63F800D39CAC /* WelcomeViewController.swift */,
+				F9D9D4C32A10AC8500D39CAC /* EducationViewController.swift */,
+				F9D9D4C52A10AC9400D39CAC /* TravelViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F9D9D4C92A10AFFC00D39CAC /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				F9D9D4B32A0A242000D39CAC /* Main.storyboard */,
+				F9D9D4B82A0A242200D39CAC /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		F9D9D4CA2A10B02200D39CAC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F9D9D4B62A0A242200D39CAC /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F9D9D4CB2A10B08700D39CAC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F9D9D4CC2A10B26800D39CAC /* Person.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +190,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9D9D4C62A10AC9400D39CAC /* TravelViewController.swift in Sources */,
 				F9D9D4B22A0A242000D39CAC /* LoginViewController.swift in Sources */,
 				F9D9D4C22A0A63F800D39CAC /* WelcomeViewController.swift in Sources */,
 				F9D9D4AE2A0A242000D39CAC /* AppDelegate.swift in Sources */,
+				F9D9D4CD2A10B26800D39CAC /* Person.swift in Sources */,
+				F9D9D4C42A10AC8500D39CAC /* EducationViewController.swift in Sources */,
 				F9D9D4B02A0A242000D39CAC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,7 +344,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LogInApp/Info.plist;
+				INFOPLIST_FILE = LogInApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -305,9 +357,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Marikavka.LogInApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -319,7 +374,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LogInApp/Info.plist;
+				INFOPLIST_FILE = LogInApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -332,9 +387,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Marikavka.LogInApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
